@@ -3,51 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karan | Web Developer</title>
+<title>To-Do App</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 
-<header class="header">
-<h1>Karan</h1>
-<p>Web Development Intern</p>
-</header>
-
-
-<section class="about">
-<h2>About Me</h2>
-<p>I am a passionate web development intern learning to build responsive and user-friendly websites using modern web technologies.</p>
-</section>
-
-
-<section class="skills">
-<h2>Skills</h2>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Responsive Design</li>
-</ul>
-</section>
-
-
-<section class="projects">
-<h2>Projects</h2>
-<div class="project-card">Landing Page Website</div>
-<div class="project-card">Portfolio Website</div>
-</section>
-
-
-<section class="contact">
-<h2>Contact</h2>
-<p>Email: karan@example.com</p>
-</section>
-
-
-<footer>
-<p>© 2026 Karan</p>
-</footer>
+<div class="container">
+<h1>My To-Do List</h1>
+<div class="input-box">
+<input type="text" id="taskInput" placeholder="Enter a task">
+<button onclick="addTask()">Add</button>
+</div>
+<ul id="taskList"></ul>
+</div>
 
 
 <script src="script.js"></script>
