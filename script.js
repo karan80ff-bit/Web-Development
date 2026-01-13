@@ -1,30 +1,17 @@
-function addTask() {
-const taskInput = document.getElementById("taskInput");
-const taskText = taskInput.value.trim();
+let display = document.getElementById("display");
 
+function appendValue(value) {
+    display.value += value;
+}
 
-if (taskText === "") return;
+function clearDisplay() {
+    display.value = "";
+}
 
-
-const li = document.createElement("li");
-li.textContent = taskText;
-
-
-li.onclick = function () {
-li.classList.toggle("completed");
-};
-
-
-const deleteBtn = document.createElement("button");
-deleteBtn.textContent = "X";
-deleteBtn.onclick = function () {
-li.remove();
-};
-
-
-li.appendChild(deleteBtn);
-document.getElementById("taskList").appendChild(li);
-
-
-taskInput.value = "";
+function calculate() {
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = "Error";
+    }
 }
