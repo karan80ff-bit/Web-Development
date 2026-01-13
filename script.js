@@ -1,3 +1,1 @@
-function showAlert() {
-alert("Welcome to SkillCraft Internship Program!");
-}
+console.log("Portfolio Loaded Successfully");
